@@ -281,7 +281,7 @@ system_node_install() {
   sleep 2
 
   sudo su - root <<EOF
-  curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo -E bash -
+  curl -fsSL https://deb.nodesource.com/node_$NODE_MAJOR.x | sudo -E bash -
   apt-get install -y nodejs
   sleep 2
   npm install -g npm@latest
